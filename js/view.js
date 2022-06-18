@@ -1,5 +1,5 @@
 function singlePost() {
-    let newObject = localStorage.getItem('viewPost')
+    let newObject = localStorage.getItem('viewedPost')
     console.log(newObject);
     let post = JSON.parse(newObject)
     console.log(post)
@@ -9,4 +9,4 @@ function singlePost() {
     document.getElementById('card-text').innerHTML = post.body
 }
 
-renderSingle();
+singlePost();

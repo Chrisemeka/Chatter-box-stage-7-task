@@ -125,9 +125,9 @@ function viewPost(id) {
     .then((response) => response.json())
     .then((data) => {
       console.log(data)
-      localStorage.setItem('viewPost', JSON.stringify(data))
+      localStorage.setItem('viewedPost', JSON.stringify(data))
       window.location.href = 'view.html'
-      console.log(data)
+      // console.log(data)
     });
 }
 
