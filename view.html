@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatter Box/ Blogs</title>
+    <link rel="shortcut icon" href="./img/comment-dots-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="mb-5">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+              <a class="navbar-brand" href="#"><i class="fa-solid fa-comment-dots me-2"></i>Chatter Box</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto" style="gap: 20px;">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" href="#">Features</a>
+                  <a class="nav-link" href="#">Blogs</a>
+                  <a class="nav-link" href="#">Top Stories</a>
+                </div>
+              </div>
+            </div>
+        </nav>
+
+        <div class="container">
+          <div class="row row-cols-auto bg-dark d-lg-none rounded-bottom">
+            <div class="col"><a class="nav-link active" aria-current="page" href="#"><i class="bi bi-person-circle me-2"></i>Profile</a></div>
+            <div class="col"><a class="nav-link" href="#"><i class="bi bi-book me-2"></i>Topics</a></div>
+            <div class="col"><a class="nav-link" href="#"><i class="bi bi-bookmark me-2"></i>Bookmarks</a></div>
+            <div class="col"><a class="nav-link" href="#"><i class="bi bi-search me-2"></i>Search</a></div>
+          </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="row">
+          <div class="col-lg-3  vh-100 p-4 sticky-lg-top d-lg-block non-sticky d-none">
+            <div class="sidenav">
+              <a href="#about" class="mb-3"><i class="bi bi-person-circle me-2"></i>Profile</a>
+              <a href="#services" class="mb-3"><i class="bi bi-book me-2"></i>Topics</a>
+              <a href="#clients" class="mb-3"><i class="bi bi-bookmark me-2"></i>Bookmarks</a>
+              <a href="#contact"><i class="bi bi-search me-2"></i>Search</a>
+            </div>
+          </div>
+          
+          <div class="col-lg-9">
+
+            <h3 class="mb-4 mt-5">Post</h3>
+            <div class="row" id="post-holder">
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <script src="./js/view.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/460caaf538.js" crossorigin="anonymous"></script>
+</body>
+</html>
